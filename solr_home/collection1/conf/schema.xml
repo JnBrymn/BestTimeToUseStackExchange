@@ -104,17 +104,23 @@
    <field name="CreationDate" type="date" indexed="true" stored="true" omitNorms="true"/>
    <field name="Score" type="int" indexed="true" stored="true" omitNorms="true"/>
    <field name="ViewCount" type="int" indexed="true" stored="true" omitNorms="true"/>
-   <field name="Body" type="text_en" indexed="true" stored="true" omitNorms="true"/>
+   <field name="Body" type="text_en" indexed="true" stored="true" />
    <field name="OwnerUserId" type="string" indexed="true" stored="true" omitNorms="true"/>
    <field name="LastEditorUserId" type="string" indexed="true" stored="true" omitNorms="true"/>
    <field name="LastEditorDisplayName" type="string" indexed="true" stored="true" omitNorms="true"/>
    <field name="LastEditDate" type="date" indexed="true" stored="true" omitNorms="true"/>
    <field name="LastActivityDate" type="date" indexed="true" stored="true" omitNorms="true"/>
-   <field name="Title" type="text_en" indexed="true" stored="true" omitNorms="true"/>
+   <field name="Title" type="text_en" indexed="true" stored="true" />
    <field name="Tags" type="text_ws" indexed="true" stored="true" omitNorms="true"/>
    <field name="AnswerCount" type="int" indexed="true" stored="true" omitNorms="true"/>
    <field name="CommentCount" type="int" indexed="true" stored="true" omitNorms="true"/>
    <field name="FavoriteCount" type="int" indexed="true" stored="true" omitNorms="true"/>
+   <field name="CreationMonth" type="int" indexed="true" stored="true" omitNorms="true"/>
+   <field name="CreationHour" type="int" indexed="true" stored="true" omitNorms="true"/>
+   <field name="CreationMinute" type="int" indexed="true" stored="true" omitNorms="true"/>
+   <field name="CreationDayOfWeek" type="int" indexed="true" stored="true" omitNorms="true"/>
+   <field name="CreationDayOfYear" type="int" indexed="true" stored="true" omitNorms="true"/>
+   <field name="CreationDayOfWeek_Hour" type="string" indexed="true" stored="true" omitNorms="true"/>
 
 
 
@@ -232,7 +238,7 @@
         field name or dynamic field, rather than reporting them as an error. 
         alternately, change the type="ignored" to some other type e.g. "text" if you want 
         unknown fields indexed and/or stored by default --> 
-   <dynamicField name="*" type="ignored" multiValued="true" />
+        <dynamicField name="*" type="ignored" multiValued="true" />
    
  </fields>
 
