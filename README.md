@@ -14,3 +14,4 @@ To index documents:
 
 testtoken1
 testtoken2
+testtoken3
